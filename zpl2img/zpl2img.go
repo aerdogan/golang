@@ -20,7 +20,7 @@ func main() {
         log.Fatalln(err)
 	}
 	
-    /* req.Header.Set("Accept", "application/pdf" PDF türünde çıktı almak için */
+    req.Header.Set("Accept", "application/pdf")
 
     client := &http.Client{}
     response, err := client.Do(req)
